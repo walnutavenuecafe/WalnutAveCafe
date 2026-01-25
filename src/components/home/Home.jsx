@@ -27,6 +27,9 @@ const Home = () => {
              <a href="#menu" className="btn"> Check Menu </a>
              <a href="#contact" className="btn" id='btn1'>Contact Us</a>
            </div>
+           <div className="message">
+            <h1>WE WILL BE  CLOSED THIS    </h1>
+           </div>
             </div>
         </div>
     </section>

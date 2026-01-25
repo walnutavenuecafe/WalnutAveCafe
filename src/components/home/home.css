@@ -68,3 +68,20 @@ background-color: transparent;
 .home__btns{
         justify-content:center ;
     }
+.message h1{
+    font-family: var(--body-font);
+  color: var(red);
+  font-weight: var(--weight-400);
+  margin: 2vh;
+  text-align: center;
+  align-items: center;
+}
+.message{
+    background-color:var(  --new-green-color);
+    height: fit-content;
+    border-radius: 2vh;
+  display: none;
+  justify-content: center;
+  margin-top: 5vh;
+  border: 2px solid var(--first-color);
+}
