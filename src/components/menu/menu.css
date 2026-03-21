@@ -85,7 +85,86 @@
     transform: translateX(-50%);
 
 }
+/* POPUP BACKGROUND */
 
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:999;
+}
+
+/* CARD */
+
+.popup__card{
+background:white;
+border-radius:16px;
+max-width:600px;
+width:90%;
+overflow:hidden;
+text-align:center;
+box-shadow:0 25px 60px rgba(0,0,0,.5);
+animation:fadeIn .3s ease;
+}
+
+.popup__card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.popup__card h2{
+margin:20px 0 10px;
+color: var(--first-color);
+}
+
+.popup__card p{
+padding:0 20px 20px;
+color:#666;
+}
+
+/* CLOSE */
+
+.popup__close{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+color:white;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+/* ARROWS */
+
+.popup__prev,
+.popup__next{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:50px;
+color:white;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+.popup__prev{ left:30px; }
+.popup__next{ right:30px; }
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+from{opacity:0;transform:scale(.9)}
+to{opacity:1;transform:scale(1)}
+}
 @media screen and (max-width: 992px){
 
     .menu__item:hover {
